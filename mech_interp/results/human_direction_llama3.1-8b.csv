@@ -1,0 +1,127 @@
+pair,template,delta,favors_human_direction
+Belgium-Luxembourg,different_and,0.49403670882853934,False
+Belgium-Luxembourg,different_degree,-0.5351178093719398,True
+Belgium-Luxembourg,different_to,-0.13825099051370415,True
+Belgium-Luxembourg,similar_and,-0.09845847603126145,True
+Belgium-Luxembourg,similar_degree,-0.47176771304527065,True
+Belgium-Luxembourg,similar_to,0.216866808720658,False
+China-Albania,different_and,-2.08324238828412,True
+China-Albania,different_degree,-1.3521809458817913,True
+China-Albania,different_to,-1.60655633399206,True
+China-Albania,similar_and,0.6660626251096797,False
+China-Albania,similar_degree,0.09455517205393749,False
+China-Albania,similar_to,0.3086101127314649,False
+China-North Korea,different_and,3.5584587256639146,False
+China-North Korea,different_degree,0.15444338393129087,False
+China-North Korea,different_to,-0.3524611868616141,True
+China-North Korea,similar_and,-0.8151755923526292,True
+China-North Korea,similar_degree,1.8127601106673907,False
+China-North Korea,similar_to,0.5089934379185213,False
+England-Ireland,different_and,-2.043340030929265,True
+England-Ireland,different_degree,-3.1656323816402345,True
+England-Ireland,different_to,-3.797703556357395,True
+England-Ireland,similar_and,2.612133801454595,False
+England-Ireland,similar_degree,0.8035533535667838,False
+England-Ireland,similar_to,2.9336999083953135,False
+England-Jordan,different_and,3.4414154543674655,False
+England-Jordan,different_degree,2.7011811099031586,False
+England-Jordan,different_to,3.701941334107694,False
+England-Jordan,similar_and,0.6948037266855536,False
+England-Jordan,similar_degree,-0.014924344600238282,True
+England-Jordan,similar_to,-0.031410268534170616,True
+France-Algeria,different_and,-1.2579533263818146,True
+France-Algeria,different_degree,-0.6575223420704237,True
+France-Algeria,different_to,-1.7020285982641372,True
+France-Algeria,similar_and,0.7878003597692995,False
+France-Algeria,similar_degree,-0.7785927346933939,True
+France-Algeria,similar_to,-0.23815728509054956,True
+France-Israel,different_and,4.144303723393325,False
+France-Israel,different_degree,0.3566059341118013,False
+France-Israel,different_to,2.0340288404714624,False
+France-Israel,similar_and,-3.7013043132337584,True
+France-Israel,similar_degree,1.1541469935708948,False
+France-Israel,similar_to,1.2506139753511407,False
+Germany-Austria,different_and,-0.6769917424676253,True
+Germany-Austria,different_degree,-0.5575165366471886,True
+Germany-Austria,different_to,-0.9652546081346527,True
+Germany-Austria,similar_and,1.4297364192079414,False
+Germany-Austria,similar_degree,0.43333233180298336,False
+Germany-Austria,similar_to,1.2992798388362754,False
+India-Sri Lanka,different_and,-1.6101978577164964,True
+India-Sri Lanka,different_degree,-1.56190450883558,True
+India-Sri Lanka,different_to,-1.996163745883699,True
+India-Sri Lanka,similar_and,-0.3454392301486777,True
+India-Sri Lanka,similar_degree,-0.899554658684357,True
+India-Sri Lanka,similar_to,1.0039992537316795,False
+Japan-Philippines,different_and,1.0500093087004085,False
+Japan-Philippines,different_degree,-1.1321538603137924,True
+Japan-Philippines,different_to,-0.5621125909879297,True
+Japan-Philippines,similar_and,1.4998290216598562,False
+Japan-Philippines,similar_degree,0.5238330059755523,False
+Japan-Philippines,similar_to,2.962629704698125,False
+U.S.A.-Canada,different_and,-0.7338179493290489,True
+U.S.A.-Canada,different_degree,-2.204247786506171,True
+U.S.A.-Canada,different_to,-2.4359725907390106,True
+U.S.A.-Canada,similar_and,0.25126784191761686,False
+U.S.A.-Canada,similar_degree,0.5400450099278089,False
+U.S.A.-Canada,similar_to,1.1531676727407003,False
+U.S.A.-France,different_and,-0.8912157653484574,True
+U.S.A.-France,different_degree,-0.06699200672766104,True
+U.S.A.-France,different_to,-3.5982346322516,True
+U.S.A.-France,similar_and,-0.4720602371921938,True
+U.S.A.-France,similar_degree,2.028220031959407,False
+U.S.A.-France,similar_to,4.070427153345463,False
+U.S.A.-Germany,different_and,1.256267106368064,False
+U.S.A.-Germany,different_degree,1.76781009380408,False
+U.S.A.-Germany,different_to,-0.3134500013402235,True
+U.S.A.-Germany,similar_and,-1.2798928374900616,True
+U.S.A.-Germany,similar_degree,1.7108729911192206,False
+U.S.A.-Germany,similar_to,4.497730713811709,False
+U.S.A.-Israel,different_and,2.6793472631336366,False
+U.S.A.-Israel,different_degree,2.1735460556889645,False
+U.S.A.-Israel,different_to,-0.022354695966548377,True
+U.S.A.-Israel,similar_and,-3.03283929509322,True
+U.S.A.-Israel,similar_degree,-3.445979874269444,True
+U.S.A.-Israel,similar_to,1.6141244414215343,False
+U.S.A.-Mexico,different_and,-0.6989992035199002,True
+U.S.A.-Mexico,different_degree,0.763463369696245,False
+U.S.A.-Mexico,different_to,-3.9171037654010394,True
+U.S.A.-Mexico,similar_and,-1.8543352135893123,True
+U.S.A.-Mexico,similar_degree,-0.14078354613393884,True
+U.S.A.-Mexico,similar_to,2.6307697220943016,False
+U.S.A.-U.S.S.R.,different_and,1.6995533644114929,False
+U.S.A.-U.S.S.R.,different_degree,2.03741778604709,False
+U.S.A.-U.S.S.R.,different_to,2.314034496450926,False
+U.S.A.-U.S.S.R.,similar_and,-1.4251073380892925,True
+U.S.A.-U.S.S.R.,similar_degree,-1.5746748572562677,True
+U.S.A.-U.S.S.R.,similar_to,-0.17289604896236566,True
+U.S.S.R.-Cuba,different_and,-7.354467066974175,True
+U.S.S.R.-Cuba,different_degree,-5.1274779143525375,True
+U.S.S.R.-Cuba,different_to,-7.79460294065057,True
+U.S.S.R.-Cuba,similar_and,9.855345220956778,False
+U.S.S.R.-Cuba,similar_degree,0.0022149108657920635,False
+U.S.S.R.-Cuba,similar_to,3.1194899058820886,False
+U.S.S.R.-France,different_and,-5.351728712326615,True
+U.S.S.R.-France,different_degree,-2.603009107833934,True
+U.S.S.R.-France,different_to,-2.471034027175534,True
+U.S.S.R.-France,similar_and,0.015477708541012714,False
+U.S.S.R.-France,similar_degree,0.4258256464853276,False
+U.S.S.R.-France,similar_to,-0.284153321161686,True
+U.S.S.R.-Israel,different_and,-1.4123669032789081,True
+U.S.S.R.-Israel,different_degree,-1.1795320158266094,True
+U.S.S.R.-Israel,different_to,-1.431047963789343,True
+U.S.S.R.-Israel,similar_and,0.544635722216465,False
+U.S.S.R.-Israel,similar_degree,-0.4492803199992157,True
+U.S.S.R.-Israel,similar_to,-0.47234341585229167,True
+U.S.S.R.-Poland,different_and,-9.110412332414265,True
+U.S.S.R.-Poland,different_degree,-10.179480695848499,True
+U.S.S.R.-Poland,different_to,-9.25837681243518,True
+U.S.S.R.-Poland,similar_and,4.33192833967507,False
+U.S.S.R.-Poland,similar_degree,0.6962777445406179,False
+U.S.S.R.-Poland,similar_to,2.0856105036568975,False
+U.S.S.R.-Syria,different_and,-4.275287139496902,True
+U.S.S.R.-Syria,different_degree,-1.2988432359415896,True
+U.S.S.R.-Syria,different_to,-3.185256664593785,True
+U.S.S.R.-Syria,similar_and,0.6942929072944748,False
+U.S.S.R.-Syria,similar_degree,-1.7555064392709356,True
+U.S.S.R.-Syria,similar_to,-1.630986999857313,True

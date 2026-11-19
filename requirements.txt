@@ -1,0 +1,21 @@
+# Core numerics and plotting
+numpy>=1.21.0
+pandas>=1.5.0
+scipy>=1.9.0
+matplotlib>=3.5.0
+
+# Model loading and instrumentation
+torch>=2.0.0
+transformers>=4.50.0
+accelerate>=0.20.0
+
+# 4-bit loading, needed only for Gemma-3-12B (see mech_interp/config.py)
+bitsandbytes>=0.43.0
+
+# Reads HUGGINGFACEHUB_API_TOKEN from .env for gated checkpoints
+python-dotenv>=1.0.0
+
+# Optional: local tracing of HuggingFace calls. config.py no-ops without these,
+# and PHOENIX_ENABLED=0 disables tracing even when they are installed.
+# arize-phoenix
+# openinference-instrumentation-transformers

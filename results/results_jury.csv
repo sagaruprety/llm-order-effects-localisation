@@ -1,0 +1,7 @@
+task,condition,experiment,sequence,n_cases,pr_guilt_human,rating_human,rating_min,rating_max,source
+jury,SP,both,SP,1,0.672,13.44,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
+jury,SP_WD,both,SP+WD,2,0.719,14.38,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
+jury,WD,order,WD,1,0.51,10.2,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
+jury,WD_SP,order,WD+SP,2,0.75,15.0,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
+jury,WP,strength,WP,1,0.6,12.0,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
+jury,WP_WD,strength,WP+WD,2,0.525,10.5,0,20,"Trueblood & Busemeyer 2011 Cognitive Science 35, Table 3"
