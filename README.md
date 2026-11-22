@@ -34,6 +34,50 @@ Everything was run on a single 24GB NVIDIA L4. Gemma-3-12B is the one model
 loaded in 4-bit, because its bfloat16 weights alone fill that card; the other
 three run in bfloat16. See `mech_interp/config.py`.
 
+## Datasets
+
+There are three kinds of data here, and it is worth being clear about which is
+which.
+
+**1. The stimuli** are defined in code, in `mech_interp/stimuli.py` and
+`mech_interp/stimuli_jury.py`, and those modules are authoritative: the
+experiment scripts build their prompts from them directly. For inspection
+without reading Python, `data/` holds a generated export of exactly the same
+content:
+
+| File | Contents |
+|---|---|
+| `data/similarity_pairs.csv` | 21 prominence pairs and 10 equal-prominence controls |
+| `data/similarity_templates.csv` | The six prompt templates |
+| `data/similarity_prompts.csv` | All 372 rendered prompts (31 pairs × 6 templates × 2 orders) |
+| `data/jury_evidence.csv` | The four evidence blocks, verbatim |
+| `data/jury_conditions.csv` | The nine conditions and their evidence order |
+| `data/jury_prompts.csv` | The nine rendered condition prompts |
+| `data/stimuli.json` | All of the above in one nested document |
+
+Regenerate with `python mech_interp/export_stimuli.py`. A test fails if the
+export drifts from the stimulus modules, so what is in `data/` is always what
+the experiments ran.
+
+The similarity stimuli are the country pairs of Tversky and Gati (1978, Study
+2). The 10 equal-prominence control pairs are ours: Tversky's account predicts
+no order asymmetry for them, which is what makes them a specificity control
+rather than a second treatment. The jury materials are the vignette of
+Trueblood and Busemeyer (2011); the three neutral-item conditions (`NE`,
+`SP_NE`, `WP_NE`) are ours, and serve the same purpose.
+
+**2. Human ground truth** is published aggregate data reproduced from the source
+studies, not data collected here:
+
+- `results/results_human.csv` — Tversky and Gati (1978) ratings for the 21 pairs
+- `results/results_jury.csv` — Trueblood and Busemeyer (2011) Table 3
+
+No data was collected from human participants for this work.
+
+**3. Model outputs** are in `mech_interp/results/`: 51 CSVs, one per
+(experiment, model), containing the measurements behind every figure and table
+in the paper. These are what the plotting scripts read.
+
 ## Reproducing the figures
 
 The committed CSVs under `mech_interp/results/` are the exact results behind the
@@ -98,8 +142,9 @@ and multiplied.
 ```
 mech_interp/
   config.py             Model registry, paths, answer scaffold, 4-bit policy
-  stimuli.py            Similarity stimuli and prompt templates
-  stimuli_jury.py       Jury evidence blocks and the nine conditions
+  stimuli.py            Similarity stimuli and prompt templates (authoritative)
+  stimuli_jury.py       Jury evidence blocks and the nine conditions (authoritative)
+  export_stimuli.py     Dumps both of the above to data/ as CSV and JSON
   build_jury_data.py    Writes the human jury ground truth to results/
   behavioral.py         E[r] measurement for both paradigms
   logit_lens.py         Per-layer Δ(L) for similarity
@@ -111,15 +156,14 @@ mech_interp/
   plot_*.py             One script per paper figure
   tests/                Regression cover for the rating-probability combination
   results/              The CSVs behind the paper's figures and tables
+data/                   Generated export of the stimuli (see Datasets above)
 results/
   results_human.csv     Tversky and Gati (1978) published aggregate ratings
   results_jury.csv      Trueblood and Busemeyer (2011) published aggregates
 ```
 
-The two files under the top-level `results/` are published aggregate statistics
-reproduced from the cited source studies, not data collected here. No data was
-collected from human participants for this work, and no model was trained or
-fine-tuned.
+No data was collected from human participants for this work, and no model was
+trained or fine-tuned.
 
 ## Tests
 

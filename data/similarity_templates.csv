@@ -1,0 +1,7 @@
+template,task_type,text
+similar_to,similarity,"On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, is {x} similar to {y}? Return only a number"
+similar_and,similarity,"On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, how similar are {x} and {y}? Return only a number"
+similar_degree,similarity,"On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, assess the degree to which {x} similar to {y}? Return only a number"
+different_to,difference,"On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, is {x} different to {y}? Return only a number"
+different_and,difference,"On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, how different are {x} and {y}? Return only a number"
+different_degree,difference,"On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, assess the degree to which {x} differs from {y}? Return only a number"

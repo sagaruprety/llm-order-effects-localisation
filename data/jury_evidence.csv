@@ -1,0 +1,11 @@
+label,text
+SP,"The prosecution presents the following case:
+- A witness identified the defendant in a police lineup.
+- The type of burglary (commercial) is the same as that of the defendant's past convictions.
+- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions."
+WP,"The prosecution presents the following case:
+- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions."
+WD,"The defense presents the following case:
+- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary."
+NE,"The following additional information was entered into the record:
+- The court clerk confirmed that the warehouse is located in the eastern district of the city and was built in 1974."

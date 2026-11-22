@@ -1,0 +1,32 @@
+first,second,is_control,role
+U.S.A.,Mexico,False,prominence
+U.S.S.R.,Poland,False,prominence
+China,Albania,False,prominence
+U.S.A.,Israel,False,prominence
+Japan,Philippines,False,prominence
+U.S.A.,Canada,False,prominence
+U.S.S.R.,Israel,False,prominence
+England,Ireland,False,prominence
+Germany,Austria,False,prominence
+U.S.S.R.,France,False,prominence
+Belgium,Luxembourg,False,prominence
+U.S.A.,U.S.S.R.,False,prominence
+China,North Korea,False,prominence
+India,Sri Lanka,False,prominence
+U.S.A.,France,False,prominence
+U.S.S.R.,Cuba,False,prominence
+England,Jordan,False,prominence
+France,Israel,False,prominence
+U.S.A.,Germany,False,prominence
+U.S.S.R.,Syria,False,prominence
+France,Algeria,False,prominence
+Norway,Sweden,True,control
+Spain,Portugal,True,control
+Belgium,Netherlands,True,control
+Argentina,Chile,True,control
+Kenya,Tanzania,True,control
+Austria,Switzerland,True,control
+Denmark,Finland,True,control
+Peru,Ecuador,True,control
+Malaysia,Thailand,True,control
+Ghana,Senegal,True,control

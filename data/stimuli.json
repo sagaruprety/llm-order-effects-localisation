@@ -1,0 +1,3725 @@
+{
+  "similarity": {
+    "rating_scale": {
+      "min": 0,
+      "max": 20
+    },
+    "n_prominence_pairs": 21,
+    "n_control_pairs": 10,
+    "pairs": [
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "role": "prominence"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "role": "control"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "role": "control"
+      }
+    ],
+    "templates": [
+      {
+        "template": "similar_to",
+        "task_type": "similarity",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, is {x} similar to {y}? Return only a number"
+      },
+      {
+        "template": "similar_and",
+        "task_type": "similarity",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, how similar are {x} and {y}? Return only a number"
+      },
+      {
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no similarity and {rmax} means complete similarity, assess the degree to which {x} similar to {y}? Return only a number"
+      },
+      {
+        "template": "different_to",
+        "task_type": "difference",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, is {x} different to {y}? Return only a number"
+      },
+      {
+        "template": "different_and",
+        "task_type": "difference",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, how different are {x} and {y}? Return only a number"
+      },
+      {
+        "template": "different_degree",
+        "task_type": "difference",
+        "text": "On a scale of {rmin} to {rmax}, where {rmin} means no difference and {rmax} means completely different, assess the degree to which {x} differs from {y}? Return only a number"
+      }
+    ],
+    "prompts": [
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Mexico similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Mexico and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Mexico similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Mexico different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Mexico and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from Mexico? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Mexico",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Mexico differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Poland similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Poland and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Poland similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Poland different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Poland and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from Poland? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Poland",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Poland differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is China similar to Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Albania similar to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are China and Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Albania and China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which China similar to Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Albania similar to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is China different to Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Albania different to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are China and Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Albania and China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which China differs from Albania? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "Albania",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Albania differs from China? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Israel similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Israel and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Israel similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Israel different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Israel and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from Israel? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Israel differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Japan similar to Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Philippines similar to Japan? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Japan and Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Philippines and Japan? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Japan similar to Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Philippines similar to Japan? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Japan different to Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Philippines different to Japan? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Japan and Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Philippines and Japan? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Japan differs from Philippines? Return only a number"
+      },
+      {
+        "first": "Japan",
+        "second": "Philippines",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Philippines differs from Japan? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Canada similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Canada and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Canada similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Canada different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Canada and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from Canada? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Canada",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Canada differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Israel similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Israel and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Israel similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Israel different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Israel and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from Israel? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Israel differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is England similar to Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Ireland similar to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are England and Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Ireland and England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which England similar to Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Ireland similar to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is England different to Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Ireland different to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are England and Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Ireland and England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which England differs from Ireland? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Ireland",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Ireland differs from England? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Germany similar to Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Austria similar to Germany? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Germany and Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Austria and Germany? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Germany similar to Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Austria similar to Germany? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Germany different to Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Austria different to Germany? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Germany and Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Austria and Germany? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Germany differs from Austria? Return only a number"
+      },
+      {
+        "first": "Germany",
+        "second": "Austria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Austria differs from Germany? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is France similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are France and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which France similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is France different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are France and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from France? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which France differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Belgium similar to Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Luxembourg similar to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Belgium and Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Luxembourg and Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Belgium similar to Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Luxembourg similar to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Belgium different to Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Luxembourg different to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Belgium and Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Luxembourg and Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Belgium differs from Luxembourg? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Luxembourg",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Luxembourg differs from Belgium? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "U.S.S.R.",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is China similar to North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is North Korea similar to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are China and North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are North Korea and China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which China similar to North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which North Korea similar to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is China different to North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is North Korea different to China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are China and North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are North Korea and China? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which China differs from North Korea? Return only a number"
+      },
+      {
+        "first": "China",
+        "second": "North Korea",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which North Korea differs from China? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is India similar to Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Sri Lanka similar to India? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are India and Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Sri Lanka and India? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which India similar to Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Sri Lanka similar to India? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is India different to Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Sri Lanka different to India? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are India and Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Sri Lanka and India? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which India differs from Sri Lanka? Return only a number"
+      },
+      {
+        "first": "India",
+        "second": "Sri Lanka",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Sri Lanka differs from India? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is France similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are France and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which France similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is France different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are France and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "France",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which France differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Cuba similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Cuba and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Cuba similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Cuba different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Cuba and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from Cuba? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Cuba",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Cuba differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is England similar to Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Jordan similar to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are England and Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Jordan and England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which England similar to Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Jordan similar to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is England different to Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Jordan different to England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are England and Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Jordan and England? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which England differs from Jordan? Return only a number"
+      },
+      {
+        "first": "England",
+        "second": "Jordan",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Jordan differs from England? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is France similar to Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Israel similar to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are France and Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Israel and France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which France similar to Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Israel similar to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is France different to Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Israel different to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are France and Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Israel and France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which France differs from Israel? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Israel",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Israel differs from France? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.A. similar to Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Germany similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.A. and Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Germany and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.A. similar to Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Germany similar to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.A. different to Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Germany different to U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.A. and Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Germany and U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.A. differs from Germany? Return only a number"
+      },
+      {
+        "first": "U.S.A.",
+        "second": "Germany",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Germany differs from U.S.A.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is U.S.S.R. similar to Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Syria similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are U.S.S.R. and Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Syria and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which U.S.S.R. similar to Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Syria similar to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is U.S.S.R. different to Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Syria different to U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are U.S.S.R. and Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Syria and U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which U.S.S.R. differs from Syria? Return only a number"
+      },
+      {
+        "first": "U.S.S.R.",
+        "second": "Syria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Syria differs from U.S.S.R.? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is France similar to Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Algeria similar to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are France and Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Algeria and France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which France similar to Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Algeria similar to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is France different to Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Algeria different to France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are France and Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Algeria and France? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which France differs from Algeria? Return only a number"
+      },
+      {
+        "first": "France",
+        "second": "Algeria",
+        "is_control": false,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Algeria differs from France? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Norway similar to Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Sweden similar to Norway? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Norway and Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Sweden and Norway? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Norway similar to Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Sweden similar to Norway? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Norway different to Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Sweden different to Norway? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Norway and Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Sweden and Norway? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Norway differs from Sweden? Return only a number"
+      },
+      {
+        "first": "Norway",
+        "second": "Sweden",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Sweden differs from Norway? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Spain similar to Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Portugal similar to Spain? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Spain and Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Portugal and Spain? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Spain similar to Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Portugal similar to Spain? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Spain different to Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Portugal different to Spain? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Spain and Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Portugal and Spain? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Spain differs from Portugal? Return only a number"
+      },
+      {
+        "first": "Spain",
+        "second": "Portugal",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Portugal differs from Spain? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Belgium similar to Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Netherlands similar to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Belgium and Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Netherlands and Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Belgium similar to Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Netherlands similar to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Belgium different to Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Netherlands different to Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Belgium and Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Netherlands and Belgium? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Belgium differs from Netherlands? Return only a number"
+      },
+      {
+        "first": "Belgium",
+        "second": "Netherlands",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Netherlands differs from Belgium? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Argentina similar to Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Chile similar to Argentina? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Argentina and Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Chile and Argentina? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Argentina similar to Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Chile similar to Argentina? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Argentina different to Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Chile different to Argentina? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Argentina and Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Chile and Argentina? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Argentina differs from Chile? Return only a number"
+      },
+      {
+        "first": "Argentina",
+        "second": "Chile",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Chile differs from Argentina? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Kenya similar to Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Tanzania similar to Kenya? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Kenya and Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Tanzania and Kenya? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Kenya similar to Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Tanzania similar to Kenya? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Kenya different to Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Tanzania different to Kenya? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Kenya and Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Tanzania and Kenya? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Kenya differs from Tanzania? Return only a number"
+      },
+      {
+        "first": "Kenya",
+        "second": "Tanzania",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Tanzania differs from Kenya? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Austria similar to Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Switzerland similar to Austria? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Austria and Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Switzerland and Austria? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Austria similar to Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Switzerland similar to Austria? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Austria different to Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Switzerland different to Austria? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Austria and Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Switzerland and Austria? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Austria differs from Switzerland? Return only a number"
+      },
+      {
+        "first": "Austria",
+        "second": "Switzerland",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Switzerland differs from Austria? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Denmark similar to Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Finland similar to Denmark? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Denmark and Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Finland and Denmark? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Denmark similar to Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Finland similar to Denmark? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Denmark different to Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Finland different to Denmark? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Denmark and Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Finland and Denmark? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Denmark differs from Finland? Return only a number"
+      },
+      {
+        "first": "Denmark",
+        "second": "Finland",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Finland differs from Denmark? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Peru similar to Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Ecuador similar to Peru? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Peru and Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Ecuador and Peru? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Peru similar to Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Ecuador similar to Peru? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Peru different to Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Ecuador different to Peru? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Peru and Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Ecuador and Peru? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Peru differs from Ecuador? Return only a number"
+      },
+      {
+        "first": "Peru",
+        "second": "Ecuador",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Ecuador differs from Peru? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Malaysia similar to Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Thailand similar to Malaysia? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Malaysia and Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Thailand and Malaysia? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Malaysia similar to Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Thailand similar to Malaysia? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Malaysia different to Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Thailand different to Malaysia? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Malaysia and Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Thailand and Malaysia? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Malaysia differs from Thailand? Return only a number"
+      },
+      {
+        "first": "Malaysia",
+        "second": "Thailand",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Thailand differs from Malaysia? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Ghana similar to Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_to",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, is Senegal similar to Ghana? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Ghana and Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_and",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, how similar are Senegal and Ghana? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Ghana similar to Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "similar_degree",
+        "task_type": "similarity",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no similarity and 20 means complete similarity, assess the degree to which Senegal similar to Ghana? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Ghana different to Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_to",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, is Senegal different to Ghana? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Ghana and Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_and",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, how different are Senegal and Ghana? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 1,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Ghana differs from Senegal? Return only a number"
+      },
+      {
+        "first": "Ghana",
+        "second": "Senegal",
+        "is_control": true,
+        "template": "different_degree",
+        "task_type": "difference",
+        "order": 2,
+        "prompt": "On a scale of 0 to 20, where 0 means no difference and 20 means completely different, assess the degree to which Senegal differs from Ghana? Return only a number"
+      }
+    ]
+  },
+  "jury": {
+    "rating_scale": {
+      "min": 0,
+      "max": 20
+    },
+    "evidence": [
+      {
+        "label": "SP",
+        "text": "The prosecution presents the following case:\n- A witness identified the defendant in a police lineup.\n- The type of burglary (commercial) is the same as that of the defendant's past convictions.\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions."
+      },
+      {
+        "label": "WP",
+        "text": "The prosecution presents the following case:\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions."
+      },
+      {
+        "label": "WD",
+        "text": "The defense presents the following case:\n- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary."
+      },
+      {
+        "label": "NE",
+        "text": "The following additional information was entered into the record:\n- The court clerk confirmed that the warehouse is located in the eastern district of the city and was built in 1974."
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "SP",
+        "sequence": "SP",
+        "n_blocks": 1,
+        "experiment": "both",
+        "is_control": false
+      },
+      {
+        "condition": "SP_WD",
+        "sequence": "SP+WD",
+        "n_blocks": 2,
+        "experiment": "both",
+        "is_control": false
+      },
+      {
+        "condition": "WD",
+        "sequence": "WD",
+        "n_blocks": 1,
+        "experiment": "order",
+        "is_control": false
+      },
+      {
+        "condition": "WD_SP",
+        "sequence": "WD+SP",
+        "n_blocks": 2,
+        "experiment": "order",
+        "is_control": false
+      },
+      {
+        "condition": "WP",
+        "sequence": "WP",
+        "n_blocks": 1,
+        "experiment": "strength",
+        "is_control": false
+      },
+      {
+        "condition": "WP_WD",
+        "sequence": "WP+WD",
+        "n_blocks": 2,
+        "experiment": "strength",
+        "is_control": false
+      },
+      {
+        "condition": "NE",
+        "sequence": "NE",
+        "n_blocks": 1,
+        "experiment": "control",
+        "is_control": true
+      },
+      {
+        "condition": "SP_NE",
+        "sequence": "SP+NE",
+        "n_blocks": 2,
+        "experiment": "control",
+        "is_control": true
+      },
+      {
+        "condition": "WP_NE",
+        "sequence": "WP+NE",
+        "n_blocks": 2,
+        "experiment": "control",
+        "is_control": true
+      }
+    ],
+    "prompts": [
+      {
+        "condition": "SP",
+        "sequence": "SP",
+        "experiment": "both",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- A witness identified the defendant in a police lineup.\n- The type of burglary (commercial) is the same as that of the defendant's past convictions.\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "SP_WD",
+        "sequence": "SP+WD",
+        "experiment": "both",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- A witness identified the defendant in a police lineup.\n- The type of burglary (commercial) is the same as that of the defendant's past convictions.\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nThe defense presents the following case:\n- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "WD",
+        "sequence": "WD",
+        "experiment": "order",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe defense presents the following case:\n- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "WD_SP",
+        "sequence": "WD+SP",
+        "experiment": "order",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe defense presents the following case:\n- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary.\n\nThe prosecution presents the following case:\n- A witness identified the defendant in a police lineup.\n- The type of burglary (commercial) is the same as that of the defendant's past convictions.\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "WP",
+        "sequence": "WP",
+        "experiment": "strength",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "WP_WD",
+        "sequence": "WP+WD",
+        "experiment": "strength",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nThe defense presents the following case:\n- A friend of the defendant's testified that he was with the defendant at his house at the time of the burglary.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "NE",
+        "sequence": "NE",
+        "experiment": "control",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe following additional information was entered into the record:\n- The court clerk confirmed that the warehouse is located in the eastern district of the city and was built in 1974.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "SP_NE",
+        "sequence": "SP+NE",
+        "experiment": "control",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- A witness identified the defendant in a police lineup.\n- The type of burglary (commercial) is the same as that of the defendant's past convictions.\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nThe following additional information was entered into the record:\n- The court clerk confirmed that the warehouse is located in the eastern district of the city and was built in 1974.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      },
+      {
+        "condition": "WP_NE",
+        "sequence": "WP+NE",
+        "experiment": "control",
+        "prompt": "You are a juror in a criminal trial. Read the case below and rate your confidence that the defendant is guilty.\n\nA warehouse was burglarized in the middle of the night. The next day, the defendant was arrested after the police received an anonymous tip.\n\nThe prosecution presents the following case:\n- The method of entry into the warehouse was unusual and is identical to that of the defendant's past convictions.\n\nThe following additional information was entered into the record:\n- The court clerk confirmed that the warehouse is located in the eastern district of the city and was built in 1974.\n\nOn a scale of 0 to 20, where 0 means certain of innocence, 10 means guilt is as likely as innocence, and 20 means certain of guilt, how confident are you that the defendant is guilty? Return only a number."
+      }
+    ]
+  }
+}

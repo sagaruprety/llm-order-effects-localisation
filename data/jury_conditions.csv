@@ -1,0 +1,10 @@
+condition,sequence,n_blocks,experiment,is_control
+SP,SP,1,both,False
+SP_WD,SP+WD,2,both,False
+WD,WD,1,order,False
+WD_SP,WD+SP,2,order,False
+WP,WP,1,strength,False
+WP_WD,WP+WD,2,strength,False
+NE,NE,1,control,True
+SP_NE,SP+NE,2,control,True
+WP_NE,WP+NE,2,control,True
